@@ -10,6 +10,15 @@ namespace TE18A_slump_tryparse
     {
         static void Main(string[] args)
         {
+            int u = 0;
+
+            while (u < 4)
+            {
+                u++;
+            }
+
+
+            Console.WriteLine(u);
 
             string input = Console.ReadLine();
 
