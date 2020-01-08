@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TE18B_Metoder", "TE18B_Metoder\TE18B_Metoder.csproj", "{27E4659E-A140-4273-B0F6-75B95D87EAA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27E4659E-A140-4273-B0F6-75B95D87EAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E4659E-A140-4273-B0F6-75B95D87EAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E4659E-A140-4273-B0F6-75B95D87EAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E4659E-A140-4273-B0F6-75B95D87EAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {473AB394-E873-412F-99C6-4933D4ADB126}
+	EndGlobalSection
+EndGlobal
