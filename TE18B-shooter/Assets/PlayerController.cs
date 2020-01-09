@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 3;
 
+    public GameObject explosion;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,5 +41,12 @@ public class PlayerController : MonoBehaviour
             transform.Translate(-movementY);
         }
 
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Instantiate(explosion, transform.position, transform.rotation);
+
+        Destroy(this.gameObject);
     }
 }

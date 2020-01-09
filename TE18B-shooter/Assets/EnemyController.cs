@@ -7,7 +7,14 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        float y = Random.Range(-5f, 5f);
+
+        Vector3 newPosition = new Vector3(y, 6);
+
+        transform.position = newPosition;
+
+
     }
 
     // Update is called once per frame
@@ -22,5 +29,10 @@ public class EnemyController : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(this.gameObject);
     }
 }
