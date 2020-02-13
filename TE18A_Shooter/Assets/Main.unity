@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  boltPrefab: {fileID: 1287502262990996, guid: 4dd15c7fe51711c48ba135fef149bbf8, type: 3}
 --- !u!4 &217226321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4578428027316768, guid: 08a11ac572b1de04c89ee9c5500c84a0,

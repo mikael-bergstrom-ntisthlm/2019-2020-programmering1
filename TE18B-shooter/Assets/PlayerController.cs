@@ -8,7 +8,11 @@ public class PlayerController : MonoBehaviour
     public float speed = 3;
 
     public GameObject explosion;
+    public GameObject bolt;
 
+    float timer = 0;
+
+    public float timeBetweenShots = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
         float controlX = Input.GetAxisRaw("Horizontal");
         float controlY = Input.GetAxisRaw("Vertical");
+
+        
 
         //print(controlX);
 
@@ -41,12 +47,32 @@ public class PlayerController : MonoBehaviour
             transform.Translate(-movementY);
         }
 
+
+        float controlFire = Input.GetAxisRaw("Fire1");
+
+        timer += Time.deltaTime;
+
+        if (timer > timeBetweenShots && controlFire > 0)
+        {
+            GameObject newBolt = Instantiate(bolt);
+
+            newBolt.transform.position = transform.position;
+
+            timer = 0;
+        }
+
+
+
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(explosion, transform.position, transform.rotation);
+        if (collision.tag == "Enemy")
+        {
+            Instantiate(explosion, transform.position, transform.rotation);
 
-        Destroy(this.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }

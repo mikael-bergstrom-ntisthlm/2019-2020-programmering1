@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public GameObject explosion;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,9 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        GameObject newExplosion = Instantiate(explosion);
+        newExplosion.transform.position = transform.position;
+
         Destroy(this.gameObject);
     }
 }

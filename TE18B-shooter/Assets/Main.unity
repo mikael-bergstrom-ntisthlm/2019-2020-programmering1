@@ -178,6 +178,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1710930486014740, guid: 08a11ac572b1de04c89ee9c5500c84a0, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4578428027316768, guid: 08a11ac572b1de04c89ee9c5500c84a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -354,6 +358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   explosion: {fileID: 1052859802758272, guid: 7e5c5b1c1b18764459c69710c7dc4adc, type: 3}
+  bolt: {fileID: 1287502262990996, guid: 4dd15c7fe51711c48ba135fef149bbf8, type: 3}
+  timeBetweenShots: 0.2
 --- !u!50 &1523670151
 Rigidbody2D:
   serializedVersion: 4
